@@ -10,7 +10,7 @@
 body {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: black;
 }
 
@@ -18,6 +18,8 @@ nav {
     width: 100%;
     height: 10vh;
     position: sticky;
+    backdrop-filter: blur(20px) brightness(40%);
+    box-shadow: 0 0 20px black;
 }
 
 .nav-container {
@@ -109,9 +111,14 @@ nav {
     background-color: #077b32;
 }
 
-section {
+.active {
+    color: #077b32;
+  }
+
+#home {
     width: 100%;
     height: 90vh;
+    margin-bottom: 5rem;
 }
 
 .main-container {
@@ -282,7 +289,7 @@ section {
     }
 }
 
-#page2{
+/* #page2{
     height: 100%;
     width: 100%;
-}
+} */

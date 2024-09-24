@@ -8,25 +8,35 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>Deepak Vaishnav</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
+<style>
+
+
+.active {
+    color: #077b32 !important;
+  }
+  </style>
+
 <body>
-    <nav>
+    <nav id="navbar" class="fixed z-10">
+
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 Deepak <span>Vaishnav</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a>
                 </div>
                 <!-- <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a>
                 </div> -->
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
-                        href="#">Skills</a></div>
+                        href="#skills">Skills</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
-                        href="#">Services</a></div>
+                        href="#services">Services</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
-                        href="#">Contact</a></div>
+                        href="#contact">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
@@ -41,7 +51,7 @@
             </div>
         </div>
     </nav>
-    <section>
+    <section id="home" class="pt-32">
         <div class="main-container">
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
                 <img src="main.png" alt="">
@@ -74,12 +84,72 @@
         </div>
         
     </section>
+    <section id="skills" class="px-8">
+        <div class="container mx-auto py-12">
+            <h2 class="text-4xl text-white font-bold text-center mb-8">Skills</h2>
+            <div id="skillsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Skills will be dynamically added here -->
+            </div>
+          </div>
+    </section>
+    <section id="services" class="px-8">
+        <div class="container mx-auto py-12">
+            <h2 class="text-4xl text-white font-bold text-center mb-8">Services</h2>
+            <div id="servicesContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Services will be dynamically added here -->
+            </div>
+          </div>
+    </section>
+    <section id="contact" class="px-8">
+        <div class="container mx-auto py-12">
+            <h2 class="text-4xl text-white font-bold text-center mb-8">Contact Me</h2>
+        
+            <div class="max-w-lg mx-auto bg-white shadow-md rounded-lg p-6">
+              <form id="contactForm">
+                <!-- Name Field -->
+                <div class="mb-4">
+                  <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                  <input type="text" id="name" name="name" required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+        
+                <!-- Email Field -->
+                <div class="mb-4">
+                  <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                  <input type="email" id="email" name="email" required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+        
+                <!-- Message Field -->
+                <div class="mb-4">
+                  <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                  <textarea id="message" name="message" rows="4" required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                </div>
+        
+                <!-- Submit Button -->
+                <div>
+                  <button type="submit"
+                    class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Send Message
+                  </button>
+                </div>
+        
+                <!-- Success or Error Message -->
+                <p id="formMessage" class="text-center mt-4"></p>
+              </form>
+            </div>
+          </div>
+    </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({ offset: 0 });
     </script>
     <script src="script.js"></script>
+  <script defer src="skills.js"></script>
+  <script defer src="services.js"></script>
+  <script defer src="app.js"></script>
 </body>
 
 </html>
