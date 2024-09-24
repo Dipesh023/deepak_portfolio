@@ -1,0 +1,35 @@
+{
+    "services": [
+      {
+        "title": "Web Development",
+        "description": "Building responsive and high-performance websites using modern web technologies.",
+        "icon": "🌐"
+      },
+      {
+        "title": "Mobile App Development",
+        "description": "Creating cross-platform mobile apps for both Android and iOS devices.",
+        "icon": "📱"
+      },
+      {
+        "title": "UI/UX Design",
+        "description": "Designing user-friendly interfaces and experiences for websites and apps.",
+        "icon": "🎨"
+      },
+      {
+        "title": "E-commerce Solutions",
+        "description": "Developing robust and scalable e-commerce platforms with secure payment integrations.",
+        "icon": "🛒"
+      },
+      {
+        "title": "API Integration",
+        "description": "Seamless integration of third-party APIs to enhance web or mobile functionalities.",
+        "icon": "🔗"
+      },
+      {
+        "title": "SEO Optimization",
+        "description": "Improving website visibility and search engine rankings through SEO best practices.",
+        "icon": "🚀"
+      }
+    ]
+  }
+  

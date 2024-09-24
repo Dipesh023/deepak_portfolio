@@ -1,0 +1,13 @@
+{
+    "skills": [
+      { "name": "HTML", "level": "Expert" },
+      { "name": "CSS", "level": "Advanced" },
+      { "name": "JavaScript", "level": "Advanced" },
+      { "name": "React", "level": "Intermediate" },
+      { "name": "Node.js", "level": "Intermediate" },
+      { "name": "MongoDB", "level": "Intermediate" },
+      { "name": "Tailwind CSS", "level": "Advanced" },
+      { "name": "Git", "level": "Advanced" }
+    ]
+  }
+  
